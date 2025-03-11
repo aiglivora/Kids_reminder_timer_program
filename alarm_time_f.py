@@ -46,11 +46,6 @@ while True:
     else:
         print("Invalid choice, please try again.")
 
-
-
-
-# Validate time format
-
 # Validate time format
 def validate_time(alarm_time):
     pattern = r"^(0[1-9]|1[0-2]):([0-5][0-9]):([0-5][0-9])\s?(AM|PM)$"

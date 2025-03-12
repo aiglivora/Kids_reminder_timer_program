@@ -27,7 +27,7 @@ options = {
     "1": "It's time to play the violin",
     "2": "It's time to do the homework",
     "3": "It's time to go to school",
-    "4": "Personnaliser"
+    "4": "Personalize"
 }
 
 print("Choose an text_alarm :")
@@ -35,7 +35,7 @@ for key, value in options.items():
     print(f"{key}: {value}")
 
 while True:
-    choice = input("Entrez le numéro de votre choix : ")
+    choice = input("Enter the number of your choice : ")
     
     if choice in options:
         if choice == "4":
@@ -45,6 +45,8 @@ while True:
         break
     else:
         print("Invalid choice, please try again.")
+
+n = int(input("Enter the number of repetitions : ")) # Choice the number of repetitions
 
 # Validate time format
 def validate_time(alarm_time):
@@ -82,7 +84,7 @@ while True:
 
     if (alarm_period, alarm_hour, alarm_min, alarm_sec) == (current_period, current_hour, current_min, current_sec):
         print("Wake Up!")
-        for i in range (5):
+        for i in range (n):
             bot.say(text_alarm)
             bot.runAndWait()
         playsound('D:/TKL/8-Data science/1-Python/Exercices/alarme/rock_music_alarm.wav')

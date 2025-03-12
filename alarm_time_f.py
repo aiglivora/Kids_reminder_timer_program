@@ -87,5 +87,5 @@ while True:
         for i in range (n):
             bot.say(text_alarm)
             bot.runAndWait()
-        playsound('D:/TKL/8-Data science/1-Python/Exercices/alarme/rock_music_alarm.wav')
+        playsound('...\rock_music_alarm.wav')
         break
